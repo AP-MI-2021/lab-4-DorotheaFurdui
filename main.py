@@ -43,25 +43,25 @@ def show_menu():
     ''')
 
 
-    def main():
-        lst = []
-        while True:
-            show_menu()
-            cmd = input("Command: ")
-            if cmd == '1':
-                lst = read_list()
-            elif cmd == '2':
-                rez = numere_negative(lst)
-                print(rez)
-            elif cmd == '3':
-                pass
-            elif cmd == '4':
-                pass
-            elif cmd == '5':
-                pass
-            elif cmd == '6':
-                break
-            else:
-                print("Invalid command")
+def main():
+    lst = []
+    while True:
+      show_menu()
+      cmd = input("Command: ")
+      if cmd == '1':
+          lst = read_list()
+      elif cmd == '2':
+          rez = numere_negative(lst)
+          print(rez)
+      elif cmd == '3':
+          pass
+      elif cmd == '4':
+          pass
+      elif cmd == '5':
+          pass
+      elif cmd == '6':
+          break
+      else:
+          print("Invalid command")
 
-    main()
+main()
